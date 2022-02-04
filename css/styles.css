@@ -5,6 +5,7 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
 }
+/*Typograpgy*/
 html {
   font-size: 62.5%;
 }
@@ -50,5 +51,87 @@ p {
   }
   h3 {
     font-size: 2.4rem;
+  }
+}
+/*Links*/
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  color: var(--color-ascent);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
+  }
+}
+
+/*Badges*/
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+}
+.badge--primary {
+  background: var(--color-primary);
+  color: white;
+}
+.bade--secondary {
+  background: var(--color-secondary);
+  color: white;
+}
+.bade--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+  .bade--small {
+    font-size: 1.2rem;
+  }
+}
+
+/*Lists*/
+
+.list {
+  list-style: none;
+  padding-left: none;
+  color: var(--color-headings);
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(../icons/tick.svg);
+  padding-left: 3rem;
+}
+
+.list--tick .list__item {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+@media screen nad (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0;
   }
 }
