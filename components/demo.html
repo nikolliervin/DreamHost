@@ -1,4 +1,37 @@
-<svg width="0" height="0" class="hidden">
+
+  <!doctype>
+  <html lang="en">
+  <head>
+    <title>SVG Sprite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <style>
+      html { box-sizing: border-box }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto",
+          "Oxygen","Ubuntu","Cantarell","Fira Sans",
+          "Droid Sans","Helvetical Neue",sans-serif;
+        font-size: 1.125rem;
+        text-align: center
+      }
+      h1{
+        font-weight: 100;
+        margin-bottom: 1em
+      }
+      small { font-size: .34em }
+      .icon { 
+  width: 50px; 
+  height: 50px;
+  margin: .5em;
+}
+    </style>
+  </head>
+    
+  <body>
+    <!-- SVG Sprite -->
+    <svg width="0" height="0" class="hidden">
   <symbol id="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 51">
     <defs></defs>
     <circle cx="25.5" cy="25.5" r="25.5"></circle>
@@ -98,11 +131,6 @@
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 2" id="line">
     <path fill="#63c3ef" d="M0 0h50v2H0z"></path>
-  </symbol>
-  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 209 54" id="logo">
-    <defs></defs>
-    <path id="Polygon_1_copy_2" d="M43.851,29.7L24.244,39.2,32.037,14.02Z"></path>
-    <path id="Polygon_1_copy_2-2" d="M37.033,29.7L56.64,39.2,48.847,14.02Z"></path><text id="Moshify" transform="translate(71.466 35.437) scale(0.923)">Moshify</text>
   </symbol>
   <symbol id="menu" enable-background="new 0 0 24 24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <g>
@@ -295,3 +323,38 @@
     <g></g>
   </symbol>
 </svg>
+    <h1>
+      SVG Sprite Demo
+      <br/>
+      <small>
+        created with <a href="https://svgsprit.es/">svgsprit.es</a>
+      </small>
+    </h1>
+    <svg class="icon">
+  <use xlink:href="#chevron"></use>
+</svg><svg class="icon">
+  <use xlink:href="#clock"></use>
+</svg><svg class="icon">
+  <use xlink:href="#computer"></use>
+</svg><svg class="icon">
+  <use xlink:href="#easy"></use>
+</svg><svg class="icon">
+  <use xlink:href="#growth"></use>
+</svg><svg class="icon">
+  <use xlink:href="#line"></use>
+</svg><svg class="icon">
+  <use xlink:href="#menu"></use>
+</svg><svg class="icon">
+  <use xlink:href="#quotes"></use>
+</svg><svg class="icon">
+  <use xlink:href="#search"></use>
+</svg><svg class="icon">
+  <use xlink:href="#settings"></use>
+</svg><svg class="icon">
+  <use xlink:href="#snap"></use>
+</svg><svg class="icon">
+  <use xlink:href="#tick"></use>
+</svg><svg class="icon">
+  <use xlink:href="#wordpress"></use>
+</svg>
+  </body>
